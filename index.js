@@ -6,5 +6,8 @@
 // RUN NPM I first!!!
 
 exports.botTranslator = (str) => {
-  
+  return str
+  .split(' ')
+  .map(el =>  String.fromCharCode(parseInt(el, 2)))
+  .join('');
 }; 
